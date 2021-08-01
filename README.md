@@ -24,6 +24,12 @@ and does extra time-dependent configuration:
 - the write to `UDC` is apparently the Big Switch that turns the whole
   thing on, so that must be done last
 
+## Demo
+
+    $ nix-build .
+	$ cat result   # observe, it is a shell script
+	$ sudo bash ./result  # works only on target hardware
+
 
 ## Missing bits
 
